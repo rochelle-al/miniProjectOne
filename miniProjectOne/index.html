@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://kit.fontawesome.com/92c65f8129.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+<div class="header">
+  <div class="logo-container">
+    <i class="fas fa-fw fa-calendar-alt"></i>
+    <span class="logo-text"><b>OTIKA</b></span>
+
+  </div>
+  <div class="search-form">
+    <span class="additional-icons">
+      <i class="fas fa-bars"></i>
+      <i class="far fa-square"></i>
+    <input type="text" placeholder="Search">
+    
+    <span class="search-icon"><i class="fas fa-search"></i></span>
+  </div>
+  
+  <div class="icons-container">
+    <div class="icons-container">
+      <img src="assets/icons/email.png" alt="Email Icon">
+      <img src="assets/icons/bell.png" alt="Bell Icon">
+      <img src="assets/icons/profilePicture.jpg" alt="Profile Picture">
+    </div>
+  </div>
+</div>
+
+<div class="sidebar">
+  <h6>Main</h6>
+  <a class="active" href="#Dashboard">
+    <i class="fas fa-fw fa-chart-bar"></i> <b>Dashboard</b> <i class="fas fa-plus"></i>
+  </a>
+  <a href="#Widgets">
+    <i class="fas fa-fw fa-th"></i> Widgets <i class="fas fa-plus"></i>
+  </a>
+  <a href="#Apps">
+    <i class="fas fa-fw fa-cogs"></i> Apps <i class="fas fa-plus"></i>
+  </a>
+  <a href="#Email">
+    <i class="fas fa-fw fa-envelope"></i> Email <i class="fas fa-plus"></i>
+  </a>
+
+  <h6>UI Element</h6>
+  <a href="#Basic Components">
+    <i class="fas fa-fw fa-cube"></i> Basic Components<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Advanced">
+    <i class="fas fa-fw fa-cogs"></i> Advanced<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Blank Page">
+    <i class="fas fa-fw fa-file"></i> Blank Page<i class="fas fa-plus"></i>
+  </a>
+
+  <h6>OTIKA</h6>
+  <a href="#Forms">
+    <i class="fas fa-fw fa-file-alt"></i> Forms<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Tables">
+    <i class="fas fa-fw fa-table"></i> Tables<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Charts">
+    <i class="fas fa-fw fa-chart-pie"></i> Charts<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Icons">
+    <i class="fas fa-fw fa-icons"></i> Icons<i class="fas fa-plus"></i>
+  </a>
+
+  <h6>Media</h6>
+  <a href="#Gallery">
+    <i class="fas fa-fw fa-images"></i> Gallery<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Sliders">
+    <i class="fas fa-fw fa-sliders-h"></i> Sliders<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Timeline">
+    <i class="fas fa-fw fa-hourglass-half"></i> Timeline<i class="fas fa-plus"></i>
+  </a>
+
+  <h6>Maps</h6>
+  <a href="#Google Maps">
+    <i class="fas fa-fw fa-map-marker-alt"></i> Google Maps<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Vector Map">
+    <i class="fas fa-fw fa-map"></i> Vector Map<i class="fas fa-plus"></i>
+  </a>
+
+  <h6>Pages</h6>
+  <a href="#Auth">
+    <i class="fas fa-fw fa-user-lock"></i> Auth<i class="fas fa-plus"></i>
+  </a>
+  <a href="#Errors">
+    <i class="fas fa-fw fa-exclamation-triangle"></i> Errors <i class="fas fa-plus"></i>
+  </a>
+</div>
+
+<div class="articles-section">
+  <div class="article-card">
+    <div class="article-card-content">
+      <h3>New Booking</h3>
+      <h4>258</h4>
+      <p><span class="green-text">10%</span> Increase</p>
+    </div>
+    <img src="assets/icons/phone.jpg" alt="Article 1">
+
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-content">
+      <h3>Customers</h3>
+      <h4>1,287</h4>
+      <p><span class="yellow-text">42%</span> Decrease</p>
+    </div>
+    <img src="assets/icons/cart.png" alt="Article 2">
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-content">
+      <h3>New Project</h3>
+      <h4>128</h4>
+      <p><span class="green-text">18%</span> Increase</p>
+      
+    </div>
+    <img src="assets/icons/stopwatch.jpg" alt="Article 3">
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-content">
+      <h3>Revenue</h3>
+      <h4>$48,697</h4>
+      <p><span class="green-text">42%</span> Increase</p>
+      
+    </div>
+    <img src="assets/icons/money-bag.jpg" alt="Article 4">
+  </div>
+
+  <div class="big-article-card">
+    <div class="revenue-chart">Revenue Chart</div>
+    <div class="buttons">
+      <button class="button">Options ▼</button>
+      <button class="button">View All</button>
+    </div>
+    <div class="image-container">
+      <img src="assets/icons/graph-1.png" alt="Graph">
+    </div>
+    
+    
+  
+    <div class="article-card">
+      <div class="article-card-content">
+        <table class="data-table">
+          <tr>
+            <td>Total Customers</td>
+            <td>8,257<sup><span class="green-text"> -09%</span></sup></td>
+          </tr>
+          <tr>
+            <td>Total Income</td>
+            <td>$9857<sup><span class="red-text"> -18%</span></sup></td>
+          </tr>
+          <tr>
+            <td>Project Completed</td>
+            <td>28<sup><span class="green-text"> +16%</span></sup></td>
+          </tr>
+          <tr>
+            <td>Total Expense</td>
+            <td>$6,287<span class="green-text"><sup> +09%</sup></span></td>
+          </tr>
+          <tr>
+            <td>New Customers</td>
+            <td>684<span class="green-text"><sup> +22%</sup></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+  <div class="article-card-row-3">
+    <div class="article-card-content">
+      <h6>Chart</h6>
+      <canvas id="myChart1"></canvas>
+    </div>
+  </div>
+
+  <div class="article-card-row-3">
+    <div class="article-card-content">
+      <h6>Chart</h6>
+      <canvas id="myChart2" ></canvas>
+    </div>
+  </div>
+
+  <div class="article-card-row-3">
+    <div class="article-card-content">
+      <h6>Chart</h6>
+       <canvas id="myChart3"></canvas>
+    </div>
+  </div>
+
+
+  <div class="big-article-card-2">
+    <table class="data-table">
+      <th colspan="7"><h5>Assign Task Table</h5></th>
+      <tr>
+        <td>Task Name </td>
+        <td>Members</td>
+        <td>Task Status</td>
+        <td>Assign Date</td>
+        <td>Due Date</td>
+        <td>Priority</td>
+        <td>Action</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"> Create a mobile app </td>
+        <td><img src="assets/icons/one-member.png" alt="Image Description"></td>
+        <td>
+          <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+            <div class="loading-text">50%</div>
+          </div>
+        </td>
+        <td>2018-01-20</td>
+        <td>2019-05-28</td>
+        <td><div class="low-bubble">Low</div></td>
+        <td><div class="detail-box">Detail</div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"> Redesign homepage </td>
+        <td><img src="assets/icons/three-members.png" alt="Image Description"></td>
+        <td>
+          <div class="loading-bar-container-2">
+            <div class="loading-text-2">70%</div> 
+            <div class="loading-bar-2"></div>
+        </td>
+        <td>2017-07-14</td>
+        <td>2018-07-21</td>
+        <td><div class="high-bubble">High</div></td>
+        <td><div class="detail-box">Detail</div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"> Backup database </td>
+        <td><img src="assets/icons/one-member.png" alt="Image Description"></td>
+        <td>
+          <div class="loading-bar-container-3">
+            <div class="loading-text-3">55%</div> 
+            <div class="loading-bar-3"></div>
+        </td>
+        <td>2019-07-25</td>
+        <td>2019-08-17</td>
+        <td><div class="average-bubble">Average</div></td>
+        <td><div class="detail-box">Detail</div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"> Android App</td>
+        <td><img src="assets/icons/five-members.png" alt="Image Description"></td>
+        <td>
+          <div class="loading-bar-container-4">
+            <div class="loading-text-4">70%</div> 
+            <div class="loading-bar-4"></div>
+        </td>
+        <td>2018-04-15</td>
+        <td>2019-07-19</td>
+        <td><div class="low-bubble">Low</div></td>
+        <td><div class="detail-box">Detail</div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"> Logo Design</td>
+        <td><img src="assets/icons/one-member.png" alt="Image Description"></td>
+        <td>
+          <div class="loading-bar-container-5">
+            <div class="loading-text-5">45%</div> 
+            <div class="loading-bar-5"></div>
+        </td>
+        <td>2017-02-24</td>
+        <td>2018-09-06</td>
+        <td><div class="high-bubble">High</div></td>
+        <td><div class="detail-box">Detail</div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"> Ecommerce Website</td>
+        <td><img src="assets/icons/one-member.png" alt="Image Description"></td>
+        <td>
+          <div class="loading-bar-container-6">
+            <div class="loading-text-6">45%</div> 
+            <div class="loading-bar-6"></div>
+        </td>
+        <td>2018-01-20</td>
+        <td>2019-05-28</td>
+        <td><div class="average-bubble">Average</div></td>
+        <td><div class="detail-box">Detail</div></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <div class="article-card-row-5-1">
+    <div class="article-card-content">
+      <h4>Support Ticket</h4>
+      <table>
+        <tbody>
+          <tr>
+            <td><img src="assets/icons/user-1.jpg" alt="Profile Picture"></td>
+            <td>#89754<span class="blue-text"> Please add advance table</span>
+            <br> Hi, can you please add new table for advan...</td>
+            <td><div class="feature-bubble">Feature</div></td>
+          </tr>
+          <tr>
+            <td><img src="assets/icons/user-2.jpg" alt="Profile Picture"></td>
+            <td>#57854<span class="blue-text"> Select item not working</span>
+            <br> Please check select item in advance form it's not work...</td>
+            <td><div class="bug-bubble">Bug</div></td>
+          </tr>
+          <tr>
+            <td><img src="assets/icons/user-3.jpg" alt="Profile Picture"></td>
+            <td>#85784<span class="blue-text"> Did you provide template in Angular?</span>
+            <br> can you provide template in latest angular B.</td>
+            <td><div class="query-bubble">Query</div></td>
+          </tr>
+          <tr>
+            <td><img src="assets/icons/user-4.jpg" alt="Profile Picture"></td>
+            <td>#25874<span class="blue-text"> About template page load</span>
+            <br> Hi,John, can you work on increasing the page speed of template.</td>
+            <td><div class="enhancement-bubble">Enhancement</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+  <div class="article-card-row-5-2">
+    <div class="article-card-content">
+      <h6>Project Payments</h6>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Client Name</th>
+            <th>Date</th>
+            <th>Payment Method</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>11-08-2018</td>
+            <td>NEFT</td>
+            <td>$258</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cara Stevens</td>
+            <td>15-07-2018</td>
+            <td>Paypal</td>
+            <td>$125</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Airi Satou</td>
+            <td>25-08-2018</td>
+            <td>RTGS</td>
+            <td>$287</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Angelica Ramos</td>
+            <td>01-05-2018</td>
+            <td>CASH</td>
+            <td>$170</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Ashton Cox</td>
+            <td>18-04-2018</td>
+            <td>NEFT</td>
+            <td>$970</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>John Doe</td>
+            <td>22-11-2018</td>
+            <td>Paypal</td>
+            <td>$854</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Hasan Basri</td>
+            <td>07-09-2018</td>
+            <td>Cash</td>
+            <td>$124</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
